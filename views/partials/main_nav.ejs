@@ -1,0 +1,101 @@
+<!-- Main Nav bar  -->
+<!-- <nav
+  class="navbar navbar-expand-sm navbar-light fixed-top justify-content-center shadow p-3 mb-5 bg-white rounded"
+  style="background-color: #e3f2fd"
+> -->
+<!-- Navbar -->
+<nav
+  class="navbar navbar-expand-lg navbar-light"
+  style="background-color: #dfe5ea"
+>
+  <!-- Container wrapper -->
+  <div class="container-fluid justify-content-center">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse">
+      <!-- Here we add our logo -->
+      <a class="navbar-brand" href="#">
+        <img
+          src="/assets/images/logo.png"
+          alt="logo"
+          style="width: 50px; height: 50px; border-radius: 50px"
+        />
+      </a>
+    </div>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <!--  Home -->
+      <li class="nav-item">
+        <% if (title == "Home") { %>
+        <a class="nav-link active" href="/">
+          <% } else { %>
+          <a class="nav-link" href="/">
+            <% } %>
+            <i class="fa fa-house-user"></i> Home
+          </a>
+        </a>
+      </li>
+
+      <!--  About -->
+      <li class="nav-item">
+        <% if (title == "About me") { %>
+        <a class="nav-link active" href="/about">
+          <% } else { %>
+          <a class="nav-link" href="/about">
+            <% } %>
+            <i class="fas fa-user"></i> About me</a
+          >
+        </a>
+      </li>
+
+      <!--  Projects -->
+      <li class="nav-item">
+        <% if (title == "Projects") { %>
+        <a class="nav-link active" href="/projects">
+          <% } else { %>
+          <a class="nav-link" href="/projects">
+            <% } %>
+            <i class="fas fa-layer-group"></i> Projects
+          </a>
+        </a>
+      </li>
+
+      <!--  Services -->
+      <li class="nav-item">
+        <% if (title == "Services") { %>
+        <a class="nav-link active" href="/services">
+          <% } else { %>
+          <a class="nav-link" href="/services">
+            <% } %>
+            <i class="far fa-list-alt"></i> Services
+          </a>
+        </a>
+      </li>
+
+      <!--  Contact -->
+      <li class="nav-item">
+        <% if (title == "Contact me") { %>
+        <a class="nav-link active" href="/contact">
+          <% } else { %>
+          <a class="nav-link" href="/contact">
+            <% } %>
+            <i class="fa fa-envelope"></i> Contact me
+          </a>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
