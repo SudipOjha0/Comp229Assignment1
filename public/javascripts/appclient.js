@@ -1,8 +1,8 @@
 /*
     filename: appclients.js
-    Student name: Rudy Huayhua
-    Student id: 301229804
-    Date: Feb 19, 2022
+    Student name: Sudip Ojha
+    Student id: 301276547
+    Date: June 7, 2023
 */ 
 console.log('This goes to client side.');
 console.log(getTitle);
