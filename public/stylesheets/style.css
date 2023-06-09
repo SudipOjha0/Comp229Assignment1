@@ -1,5 +1,5 @@
 /*
-    filename: app.js
+    filename: style.css
     Student name: Nishan Lamichhane
     Student id: 301286342
     Date: June 07, 2023
@@ -22,7 +22,7 @@ html {
   border: 2px solid rgb(255, 255, 255);
 }
 .btn:hover {
-  background-color: rgb(25, 201, 84);
+  background-color: rgb(7, 7, 7);
   color: white;
   border: 2px solid rgb(255, 255, 255);
 }
@@ -30,7 +30,7 @@ html {
 /* --- Home Page --- */
 .bg_home {
   background-image: url("/assets/images/background_home.jpg");
-  height: 90%;
+  height: 80%;
   background-position: center;
   background-size: cover;
 }
@@ -43,7 +43,7 @@ html {
   color: white;
 }
 .home_text h3 {
-  color: rgb(25, 201, 84);
+  color: rgb(235, 213, 51);
 }
 .home_text p {
   font-style: italic;
@@ -109,14 +109,14 @@ html {
 }
 .mycol_InputMessage {
   color: white;
-  background-color: #dfe5ea;
+  background-color: #7e8f9c;
   border: 3px solid white;
   padding: 50px;
   font-family: sans-serif;
 }
 .mycol_ContactDetails {
   color: white;
-  background-color: #dfe5ea;
+  background-color: #7e8f9c;
   border: 3px solid white;
   padding: 80px;
   font-family: sans-serif;

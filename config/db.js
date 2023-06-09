@@ -1,5 +1,5 @@
 // This is my personal cluster
-let URI = "localhost:27017/comp229";
+let URI = "mongodb+srv://dbadmin:Q44l8k346ul7AySz@cluster001.1txdw.mongodb.net/mydb?retryWrites=true&w=majority";
 
 // Database setup
 let mongoose = require("mongoose");

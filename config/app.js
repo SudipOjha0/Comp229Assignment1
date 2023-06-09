@@ -1,10 +1,9 @@
 /*
     filename: app.js
-    Student name: Nishan Lamichhane
-    Student id: 301286342
+    Student name: Sudip Ojha
+    Student id: 301276547
     Date: June 07, 2023
 */
-
 let createError = require("http-errors");
 let express = require("express");
 let path = require("path");
@@ -16,15 +15,6 @@ let indexRouter = require("../routes/index");
 
 let app = express();
 
-//Here we configure the session
-app.use(
-  session({
-    saveUninitialized: true,
-    resave: true,
-    secret: "sessionSecret",
-  })
-);
-
 // view engine setup
 app.set("views", path.join(__dirname, "../views"));
 app.set("view engine", "ejs");
@@ -35,11 +25,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "../public")));
 app.use(express.static(path.join(__dirname, "../node_modules")));
-
-// Here we set up the passport module
-app.use(flash());
-app.use(passport.initialize());
-app.use(passport.session());
 
 app.use("/", indexRouter);
 
